@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="../emx_nav_left.css" type="text/css" />
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+  this.numberofmenuitems = allitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+<style type="text/css">
+<!--
+.Estilo1 {
+	color: #0066CC;
+	font-size: x-large;
+}
+.Estilo2 {
+	font-size: xx-large;
+	color: #003366;
+}
+.Estilo3 {color: #000033}
+.Estilo4 {color: #009966; font-size: x-large; }
+.Estilo5 {font-family: "Times New Roman", Times, serif}
+.Estilo6 {font-family: "Times New Roman", Times, serif; color: #990000; }
+body {
+	background-repeat: no-repeat;
+	background-image: url(../771b19d90e292c3aa3885285bb1c1fdc.jpg);
+	margin-right: 0px;
+	background-color: #000000;
+}
+-->
+</style>
+</head>
+<body onmousemove="closesubnav(event);">
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="#pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+<div id="masthead">
+  <h1 class="Estilo6" id="siteName"> MOTOCICLETAS </h1>
+  <div id="utility"> <a href="#">facebook</a> |wattsap|<a href="#">twitter</a> </div>
+  <div id="globalNav"> <img alt="" src="../gblnav_left.gif" height="32" width="4" id="gnl" /> <img alt="" src="../glbnav_right.gif" height="32" width="4" id="gnr" />
+    <div id="globalLink"> <a href="file:///C|/Users/52953/OneDrive/Documentos/TRABAJO MARCOS/NINJA.htm">NINJA</a><a href="#" id="gl1" class="glink" onmouseover="ehandler(event,menuitem1);"></a></div>
+    <!--end globalLinks-->
+    <form id="search" action="">
+      <input name="searchFor" type="text" size="10" />
+      <a href="">search</a>
+    </form>
+  </div>
+  <!-- end globalNav -->
+  <div id="subglobal1" class="subglobalNav"> <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> </div>
+  <div id="subglobal2" class="subglobalNav"> <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> </div>
+  <div id="subglobal3" class="subglobalNav"> <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> </div>
+  <div id="subglobal4" class="subglobalNav"> <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> </div>
+  <div id="subglobal5" class="subglobalNav"> <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> </div>
+  <div id="subglobal6" class="subglobalNav"> <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> </div>
+  <div id="subglobal7" class="subglobalNav"> <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> </div>
+  <div id="subglobal8" class="subglobalNav"> <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> </div>
+</div>
+<!-- end masthead -->
+<div id="pagecell1">
+  <!--pagecell1-->
+  <img alt="" src="../tl_curve_white.gif" height="6" width="6" id="tl" /> <img alt="" src="../tr_curve_white.gif" height="6" width="6" id="tr" />
+  <div id="breadCrumb"></div>
+  <div id="pageName">
+    <p class="Estilo4"><span class="Estilo5">LO NUEVO EN MOTOCICLETAS!</span><a href="/TRABAJO MARCOS/imagen1542.png"><img src="imagen1542.png" alt="logo" width="66" height="59" border="0" class="Estilo5"/></a></p>
+  </div>
+  <div id="pageNav">
+    <div id="sectionLinks"> <a href="file:///C|/Users/52953/OneDrive/Documentos/TRABAJO MARCOS/NINJA ZX-10R.htm">NINJA ZX-10R</a><a href="#"></a> <a href="file:///C|/Users/52953/OneDrive/Documentos/TRABAJO MARCOS/NINJA ZX-6R.htm">NINJA ZX-6R</a><a href="#"></a> <a href="#"></a></div>
+    <div class="relatedLinks"></div>
+    <div id="advert"> 
+      <p><img src="images 1578.jpeg" alt="images 1578.jpeg" width="107" height="66" border="0" />PAGINA MARCOS</p>
+      <p>&nbsp; </p>
+    </div>
+  </div>
+  <div id="content">
+    <div class="feature">
+      <img src="imagen 1536.jpg" alt="" width="280" height="200" />
+      <h1 class="Estilo1 Estilo2"> MOTOCICLETAS KAWASAKI </h1>
+      <p>&nbsp;</p>
+    </div>
+    <div class="story">
+      <p>&nbsp;</p>
+    </div>
+    <div class="story">
+      <h1 class="relatedLinks Estilo3">Debido a que una motocicleta deportiva  demanda para su desempe&ntilde;o mucha potencia, la Kawasaki ha desarrollado  tecnolog&iacute;as tendientes a obtener ingentes cantidades de &eacute;sta. Se emplean  dise&ntilde;os de peso ligero pero enorme resistencia, pues corrientemente se alcanzan  velocidades internas en el motor arriba de las 10,000 revoluciones por minuto.  Luego para optimizar el consumo de combustible y una aceleraci&oacute;n tersa y  progresiva se emplean dobles inyectores y cuerpos de aceleraci&oacute;n de fabricantes  especializados como la Keihin.A su vez, para un control y desempe&ntilde;o profesional  el chasis es cuidadosamente desarrollado y construido en materiales de alta  resistencia. En particular la estructura nombrada Trellis se ocupa profusamente  paras las unidades de mayor rendimiento. Naturalmente la configuraci&oacute;n de la  suspensi&oacute;n delantera es ampliamente estudiada con el fin de procurar control en  todo momento. Los amortiguadores empleados son de marca SHOWA o en su defecto  para la H2 Carbon, los &Ouml;hlins.Kawasaki Ninja H2 R</h1>
+      <h1><span class="relatedLinks Estilo3">Adem&aacute;s  se ofrece una unidad tipo doble prop&oacute;sito para aquellos aventureros que desean  poder y velocidad en pista pero tambi&eacute;n facilidad de tr&aacute;nsito por terrenos  agrestes. Esa unidad en particular, se beneficia de un gran motor de 1  </span></h1>
+      <h1><span class="relatedLinks Estilo3">cilindro, dise&ntilde;o especial, altura aumentada y un dise&ntilde;o exterior espectacular.  Creemos que las motocicletas deportivas Kawasaki son de las m&aacute;s solicitadas y  reputadas a nivel mundial por los mejores conductores de motocicletas</span></h1>
+    </div>
+  </div>
+  <div id="siteInfo"> <img src="imagen 1324.jpg" width="44" height="22" /> <a href="#">About Us</a> | <a href="#">Site Map</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us:953 209 4721 </a> | &copy;2022 MARCOS COMPANY </div>
+</div>
+<!--end pagecell1-->
+<br />
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script>
+</body>
+</html>
